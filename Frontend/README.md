@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Frontend APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is frontend application for the HRSystem, built to provide an intuitive and responsive interface for managing employee data and attendance. The system is designed with role-based access, allowing HR employees to manage employee records and attendance efficiently.
 
-Currently, two official plugins are available:
+## Features
+- <p align="left"><strong> Login System:  </strong> Secure login for HR employees.</p>
+- <p align="left"><strong> Employee Management: </strong> Add, edit, and view employees information (name, email, group).</p>
+- <p align="left"><strong> Attendance Tracking: </strong> Add attendance records for employees with date selection.</p>
+- <p align="left"><strong> Role-Based Access: </strong>Only HR employees can access and manage the system.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- <p align="left"><strong> React : </strong> For building dynamic, single-page user interfaces.</p>
+- <p align="left"><strong> Tailwind CSS: </strong> For responsive and clean styling.</p>
+- <p align="left"><strong> Axios: </strong> For seamless API integration with the backend.</p>
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Run
+  To run this project locally, follow these steps:
+  
+    git clone https://github.com/iVoiceUp-task
+    cd iVoiceUp-task/frontend
+    npm install
+    npm start dev
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+  create or edit .env file and add url back url
+  
+    VITE_API_URL = 
