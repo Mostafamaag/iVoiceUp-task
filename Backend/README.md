@@ -17,8 +17,8 @@ This is backend service for the HR system, providing APIs to handle user authent
 ## Run
   To run this project locally, follow these steps:
   
-    git clone https://github.com/Mostafamaag/blog-api-nestjs
-    cd iVoiceUp-task
+    git clone https://github.com/iVoiceUp-task
+    cd iVoiceUp-task/backend
     npm install
     npm run start
 
